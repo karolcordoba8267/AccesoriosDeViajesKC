@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Navegador */
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.li {
+    font-weight: bold;
+    float: left;
+    padding: 5px;
+}
+
+#inicioSesion {
+    float: right;
+}
+
+.li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.li a:hover:not(.active) {
+    background-color: antiquewhite;
+    color: #111;
+}
+
+.active {
+    background-color: antiquewhite;
+    color: #111;
+}
+
+.logoImg {
+    height: 45px;
+    width: 150px;
+    border-radius: 100px
+}
+
+/*Carrito*/
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-login-cart img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+.nav-login-cart button {
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 75px;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: antiquewhite;
+}
+
+.nav-login-cart button:active {
+    background-color: antiquewhite
+}
+
+.nav-cart-count {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}

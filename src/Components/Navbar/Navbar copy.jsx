@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import './Navbar.css'
+import './Navbar2.css'
 import logo from '../Assets/avion.png'
 import cart_icon from '../Assets/cart-icon.png'
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const NavbarCopy = () => {
@@ -10,35 +13,24 @@ const NavbarCopy = () => {
     const [menu, setMenu] = useState("shop");
     return (
         <div className="navbar">
-
-            <ul className="ul">
-                <li className="li">
-                    <div className="nav-logo">
-                        <img src={logo} alt="" />
-                        <p>KJ~CS</p>
-                    </div>
-                </li>
-                <li className="li" onClick={() => { setMenu("comprar") }}><Link className="a" to='/'>Comprar</Link> {menu === "comprar" ? <hr /> : <></>}</li>
-                <li className="li" onClick={() => { setMenu("primavera") }}><Link className="a" to='/primavera'>Primavera</Link> {menu === "primavera" ? <hr /> : <></>}</li>
-                <li className="li" onClick={() => { setMenu("invierno") }}><Link className="a" to='/invierno'>Invierno</Link> {menu === "invierno" ? <hr /> : <></>}</li>
-                <li className="li" onClick={() => { setMenu("otoño") }}><Link className="a" to='/otoño'>Otoño</Link> {menu === "otoño" ? <hr /> : <></>}</li>
-                <li className="li" onClick={() => { setMenu("verano") }}><Link className="a" to='/verano'>Verano</Link> {menu === "verano" ? <hr /> : <></>}</li>
-                <li className="li">
-                    <div className="nav-login-cart">
-                        <Link to='/login'><button className="a">Login</button></Link>
-                        <Link to='/cart'><img src={cart_icon} alt="" className="logoImg" /></Link>
-                        <div className="nav-cart-count">0</div>
-                    </div>
+            <ul className="nav-menu">
+                <li className="nav-logo">
+                    <img src={logo} alt="" />
+                    <p>KJ~CS</p>
                 </li>
 
-            </ul>
-            <div className="nav-login-cart">
-                <Link to='/login'><button className="a">Login</button></Link>
-                <Link to='/cart'><img src={cart_icon} alt="" className="logoImg" /></Link>
-                <div className="nav-cart-count">0</div>
-            </div>
-
-        </div>
+                <li className="li" onClick={() => { setMenu("comprar") }}><Link style={{ textDecoration: 'none' }} to='/'> <FontAwesomeIcon icon={faCoffee} />Comprar</Link></li>
+                <li className="li" onClick={() => { setMenu("primavera") }}><Link style={{ textDecoration: 'none' }} to='/primavera'>Primavera</Link>  </li>
+                <li className="li" onClick={() => { setMenu("invierno") }}> <Link style={{ textDecoration: 'none' }} to='/invierno'>Invierno</Link> </li>
+                <li className="li" onClick={() => { setMenu("otoño") }}> <Link style={{ textDecoration: 'none' }} to='/otoño'>Otoño</Link> </li>
+                <li className="li" onClick={() => { setMenu("verano") }}><Link style={{ textDecoration: 'none' }} to='/verano'>Verano</Link> </li>
+                <li className="li" id="inicioSesion" onClick={() => { setMenu("Login") }}><Link style={{ textDecoration: 'none' }} to='/login'>Login</Link>  </li>
+                <li className="nav-login-cart" id="inicioSesion">
+                    <Link to='/cart'><img src={cart_icon} alt="" /></Link>
+                    <div className="nav-cart-count">0</div>
+                </li>
+            </ul >
+        </div >
     )
 }
 
