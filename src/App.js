@@ -16,10 +16,10 @@ function App() {
         <Navbar3 />
         <Routes>
           <Route path='/' element={<Comprar/>}/>
-          <Route path='/primavera' element={<Categoria category="primavera"/>}/>
-          <Route path='/verano' element={<Categoria category="verano"/>}/>
-          <Route path='/invierno' element={<Categoria category="invierno"/>}/>
-          <Route path='/otoño' element={<Categoria category="otoño"/>}/>
+          <Route path='/comprar' element={<Categoria category="comprar"/>}/>
+          <Route path='/contactanos' element={<Categoria category="contactanos"/>}/>
+          <Route path='/blog' element={<Categoria category="blog"/>}/>
+          <Route path='/sobrenosotros' element={<Categoria category="sobrenosotros"/>}/>
           <Route path="product" element={<Product/>}>
             <Route path=':productId' element={<Product/>}/>
           </Route>
