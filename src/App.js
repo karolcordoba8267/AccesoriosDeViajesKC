@@ -7,6 +7,7 @@ import Categoria from './Pages/Categoria';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import Login from './Pages/Login';
+import Inicio from './Pages/Inicio';
 
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
       <BrowserRouter>
         <Navbar3 />
         <Routes>
-          <Route path='/' element={<Comprar/>}/>
-          <Route path='/comprar' element={<Categoria category="comprar"/>}/>
+          <Route path='/' element={<Inicio/>}/>
+          <Route path='/comprar' element={<Comprar/>}/>
           <Route path='/contactanos' element={<Categoria category="contactanos"/>}/>
           <Route path='/blog' element={<Categoria category="blog"/>}/>
           <Route path='/sobrenosotros' element={<Categoria category="sobrenosotros"/>}/>
