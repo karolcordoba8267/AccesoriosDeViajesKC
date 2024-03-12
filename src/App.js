@@ -1,5 +1,7 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
+import NavbarCopy from './Components/Navbar/Navbar copy';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Comprar from './Pages/Comprar';
 import Categoria from './Pages/Categoria';
@@ -12,7 +14,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar />
+        <NavbarCopy />
         <Routes>
           <Route path='/' element={<Comprar/>}/>
           <Route path='/primavera' element={<Categoria category="primavera"/>}/>

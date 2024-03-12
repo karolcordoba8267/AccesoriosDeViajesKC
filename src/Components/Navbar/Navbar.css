@@ -1,8 +1,10 @@
-.navbar {
+/*.navbar {
     display: flex;
     justify-content: space-around;
     padding: 16px;
     box-shadow: 0 1px 3px -2px black;
+    background-color: lightblue;
+    height: 50px;
 }
 
 .nav-logo {
@@ -11,20 +13,27 @@
     gap: 10px;
 }
 
+.nav-logo img{
+    width: 80px;
+    height: 60px;
+}
+
 .nav-logo p {
     color: black;
     font-size: 38px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 50px;
-    color: blue;
+    gap: 10px;
+    color: black;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 300;
+    
+    
 }
 
 .nav-menu li {
@@ -34,6 +43,18 @@
     justify-content: center;
     gap: 3px;
     cursor: pointer;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: 1px solid antiquewhite;
+    border-radius: 75px;
+    font-size: 15px;
+    font-weight: 200;
+    background-color: antiquewhite;
+}
+
+.nav-menu li:hover{
+    background-color: white;
 }
 
 .nav-menu hr {
@@ -57,14 +78,14 @@
 }
 
 .nav-login-cart button {
-    width: 157px;
-    height: 58px;
+    width: 100px;
+    height: 40px;
     outline: none;
     border: 1px solid blue;
     border-radius: 75px;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: white;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: antiquewhite;
 }
 
 .nav-login-cart button:active{
@@ -83,4 +104,46 @@
     font-size: 14px;
     background: red;
     color: white;
+}*/
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.li {
+    font-weight: bold;
+    float: left;
+    padding: 5px;
+}
+
+.a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.a:hover:not(.active) {
+    background-color: antiquewhite;
+    color: #111;
+}
+
+.active {
+    background-color: antiquewhite;
+    color: #111;
+}
+
+.logoImg {
+    height: 45px;
+    width: 150px;
+    border-radius: 100px;
 }
