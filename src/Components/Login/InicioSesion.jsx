@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css'
+import { Redirect } from 'react-router-dom';
+
 
 const LoginForm = () => {
     const [username, setUsername] = useState('');
@@ -10,6 +12,8 @@ const LoginForm = () => {
 
         if (username === 'karolc' && password === '1234') {
             alert('Inicio de sesión exitoso!');
+            <Redirect to="/" />
+
         } else {
             alert('Nombre de usuario o contraseña incorrectos.');
         }
