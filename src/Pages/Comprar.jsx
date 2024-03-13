@@ -8,7 +8,7 @@ import LoginForm from '../Components/Login/InicioSesion'
 const Comprar = () => {
   return (
     <div>
-     <LoginForm/>
+     
     </div>
   )
 }

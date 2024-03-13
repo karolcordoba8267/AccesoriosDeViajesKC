@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css'
-import { Redirect } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 
 const LoginForm = () => {
@@ -12,7 +12,7 @@ const LoginForm = () => {
 
         if (username === 'karolc' && password === '1234') {
             alert('Inicio de sesión exitoso!');
-            <Redirect to="/" />
+            <Navigate to="/" />
 
         } else {
             alert('Nombre de usuario o contraseña incorrectos.');
