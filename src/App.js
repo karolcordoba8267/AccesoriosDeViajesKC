@@ -8,6 +8,9 @@ import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import Login from './Pages/Login';
 import Inicio from './Pages/Inicio';
+import Contactanos from './Pages/Contactanos';
+import Blog from './Pages/Blog';
+import SobreNosotros from './Pages/SobreNosotros';
 
 
 function App() {
@@ -18,9 +21,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Inicio/>}/>
           <Route path='/comprar' element={<Comprar/>}/>
-          <Route path='/contactanos' element={<Categoria category="contactanos"/>}/>
-          <Route path='/blog' element={<Categoria category="blog"/>}/>
-          <Route path='/sobrenosotros' element={<Categoria category="sobrenosotros"/>}/>
+          <Route path='/contactanos' element={<Contactanos/>}/>
+          <Route path='/blog' element={<Blog/>}/>
+          <Route path='/sobrenosotros' element={<SobreNosotros/>}/>
           <Route path="product" element={<Product/>}>
             <Route path=':productId' element={<Product/>}/>
           </Route>
